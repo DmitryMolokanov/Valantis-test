@@ -1,0 +1,38 @@
+.table-container {
+  table {
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+    border: 1px solid;
+    border-collapse: collapse;
+    th {
+      border: 1px solid;
+      padding: 10px;
+    }
+    .td-id,
+    .td-product {
+      width: 35%;
+    }
+    .td-price,
+    .td-brand {
+      text-align: center;
+    }
+
+    td {
+      border: 1px solid;
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .table-container {
+    table {
+      width: 100%;
+      word-wrap: break-word;
+      .td-id,
+      .td-product {
+        width: 25%;
+      }
+    }
+  }
+}
