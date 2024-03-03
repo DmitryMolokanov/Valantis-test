@@ -8,7 +8,6 @@ export const getIds = async (offset: number, limit?: number) => {
     headers: {
       "Content-Type": "application/json",
       "X-Auth": timestamp,
-      "Content-Security-Policy": "upgrade-insecure-requests",
     },
     body: JSON.stringify({
       action: "get_ids",
@@ -27,7 +26,6 @@ export const getItems = async (idsList: string[]) => {
     headers: {
       "Content-Type": "application/json",
       "X-Auth": timestamp,
-      "Content-Security-Policy": "upgrade-insecure-requests",
     },
     body: JSON.stringify({
       action: "get_items",
@@ -46,7 +44,6 @@ export const getFields = async (field: string) => {
     headers: {
       "Content-Type": "application/json",
       "X-Auth": timestamp,
-      "Content-Security-Policy": "upgrade-insecure-requests",
     },
     body: JSON.stringify({
       action: "get_fields",
@@ -69,7 +66,6 @@ export const getFilteredItems = async (select: string, input: string) => {
     headers: {
       "Content-Type": "application/json",
       "X-Auth": timestamp,
-      "Content-Security-Policy": "upgrade-insecure-requests",
     },
     body: JSON.stringify({
       action: "filter",
