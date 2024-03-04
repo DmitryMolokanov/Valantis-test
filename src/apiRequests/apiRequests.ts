@@ -1,7 +1,7 @@
 import { getTimestamp } from "../utils/getTimestamp";
 
 export const getIds = async (offset: number, limit?: number) => {
-  const url = "http://api.valantis.store:40000/";
+  const url = "//api.valantis.store:40000/";
   const timestamp = getTimestamp();
   const response = await fetch(url, {
     method: "POST",
@@ -19,7 +19,7 @@ export const getIds = async (offset: number, limit?: number) => {
 };
 
 export const getItems = async (idsList: string[]) => {
-  const url = "http://api.valantis.store:40000/";
+  const url = "//api.valantis.store:40000/";
   const timestamp = getTimestamp();
   const response = await fetch(url, {
     method: "POST",
@@ -37,7 +37,7 @@ export const getItems = async (idsList: string[]) => {
 };
 
 export const getFields = async (field: string) => {
-  const url = "http://api.valantis.store:40000/";
+  const url = "//api.valantis.store:40000/";
   const timestamp = getTimestamp();
   const response = await fetch(url, {
     method: "POST",
@@ -59,7 +59,7 @@ export const getFields = async (field: string) => {
 };
 
 export const getFilteredItems = async (select: string, input: string) => {
-  const url = "http://api.valantis.store:40000/";
+  const url = "//api.valantis.store:40000/";
   const timestamp = getTimestamp();
   const response = await fetch(url, {
     method: "POST",
